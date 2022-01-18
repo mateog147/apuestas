@@ -62,7 +62,7 @@ public class Round {
 
         for (int i=0;i<4;i++) {
             if(winerHorse.equals(players.get(i).getHorse())){
-                players.get(i).setFounds(players.get(i).getFounds()+(int)price);;
+                players.get(i).setFounds(players.get(i).getFounds()+(int)price+players.get(i).getBet());;
             }
             players.get(i).setBet(0, "null");
         }
